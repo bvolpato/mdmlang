@@ -1,4 +1,4 @@
-package com.totvs.mdmlang.processor;
+package org.brunocvcunha.mdmlang.processor;
 
 import java.util.List;
 

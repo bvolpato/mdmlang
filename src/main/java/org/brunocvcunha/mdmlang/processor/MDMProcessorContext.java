@@ -1,4 +1,4 @@
-package com.totvs.mdmlang.processor;
+package org.brunocvcunha.mdmlang.processor;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,12 +10,11 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import org.apache.log4j.Logger;
-
-import com.totvs.mdmlang.MDMRuleWalkerListener;
-import com.totvs.mdmlang.antlr.MDMRuleLexer;
-import com.totvs.mdmlang.antlr.MDMRuleParser;
-import com.totvs.mdmlang.antlr.MDMRuleParser.MdmModelContext;
-import com.totvs.mdmlang.processor.impl.ReturnProcessor;
+import org.brunocvcunha.mdmlang.MDMRuleWalkerListener;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleLexer;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleParser;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleParser.MdmModelContext;
+import org.brunocvcunha.mdmlang.processor.impl.ReturnProcessor;
 
 /**
  * MDM Context - use it to process from source to golden record

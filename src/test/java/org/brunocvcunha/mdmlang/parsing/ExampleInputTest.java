@@ -1,4 +1,4 @@
-package com.totvs.mdmlang.parsing;
+package org.brunocvcunha.mdmlang.parsing;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,11 +9,11 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.Map;
 
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
 import org.junit.Test;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.totvs.mdmlang.processor.MDMProcessorContext;
 
 /**
  * Test that parses remove chars characters

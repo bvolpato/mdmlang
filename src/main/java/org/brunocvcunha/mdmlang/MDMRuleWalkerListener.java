@@ -1,25 +1,24 @@
-package com.totvs.mdmlang;
+package org.brunocvcunha.mdmlang;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
-import com.totvs.mdmlang.antlr.MDMRuleBaseListener;
-import com.totvs.mdmlang.antlr.MDMRuleParser;
-import com.totvs.mdmlang.antlr.MDMRuleParser.FieldContext;
-import com.totvs.mdmlang.antlr.MDMRuleParser.OperationContext;
-import com.totvs.mdmlang.antlr.MDMRuleParser.TransformationSequenceContext;
-import com.totvs.mdmlang.processor.MDMAbstractProcessor;
-import com.totvs.mdmlang.processor.MDMProcessorContext;
-import com.totvs.mdmlang.processor.constants.ProcessingSide;
-import com.totvs.mdmlang.processor.impl.OnlyNumbersProcessor;
-import com.totvs.mdmlang.processor.impl.RemoveCharsProcessor;
-import com.totvs.mdmlang.processor.impl.RemoveLeadingZerosProcessor;
-import com.totvs.mdmlang.processor.impl.ReturnProcessor;
-import com.totvs.mdmlang.processor.impl.SubstringProcessor;
-import com.totvs.mdmlang.processor.impl.TrimProcessor;
-import com.totvs.mdmlang.processor.impl.TruncateProcessor;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleBaseListener;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleParser;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleParser.FieldContext;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleParser.OperationContext;
+import org.brunocvcunha.mdmlang.antlr.MDMRuleParser.TransformationSequenceContext;
+import org.brunocvcunha.mdmlang.processor.MDMAbstractProcessor;
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
+import org.brunocvcunha.mdmlang.processor.constants.ProcessingSide;
+import org.brunocvcunha.mdmlang.processor.impl.OnlyNumbersProcessor;
+import org.brunocvcunha.mdmlang.processor.impl.RemoveCharsProcessor;
+import org.brunocvcunha.mdmlang.processor.impl.RemoveLeadingZerosProcessor;
+import org.brunocvcunha.mdmlang.processor.impl.ReturnProcessor;
+import org.brunocvcunha.mdmlang.processor.impl.SubstringProcessor;
+import org.brunocvcunha.mdmlang.processor.impl.TrimProcessor;
+import org.brunocvcunha.mdmlang.processor.impl.TruncateProcessor;
 
 /**
  * Rule Listener that creates {@link MDMProcessorContext} contexts.
@@ -41,7 +40,7 @@ public class MDMRuleWalkerListener extends MDMRuleBaseListener {
   /*
    * (non-Javadoc)
    * 
-   * @see com.totvs.mdmlang.antlr.MDMRuleBaseListener#enterFieldRules(com.totvs
+   * @see org.brunocvcunha.mdmlang.antlr.MDMRuleBaseListener#enterFieldRules(com.totvs
    * .mdmlang.antlr.MDMRuleParser.FieldRulesContext)
    */
   @Override

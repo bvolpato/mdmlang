@@ -60,7 +60,7 @@ import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.totvs.mdmlang.processor.MDMProcessorContext;
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
 
 public class MDMLanguageMain {
     public static void main(String[] args) throws IOException {

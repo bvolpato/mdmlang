@@ -1,4 +1,4 @@
-package com.totvs.mdmlang.processor.constants;
+package org.brunocvcunha.mdmlang.processor.constants;
 
 /**
  * Represents the side that some processor should work

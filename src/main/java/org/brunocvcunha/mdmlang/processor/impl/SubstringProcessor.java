@@ -1,11 +1,10 @@
-package com.totvs.mdmlang.processor.impl;
+package org.brunocvcunha.mdmlang.processor.impl;
 
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
-import com.totvs.mdmlang.processor.MDMAbstractProcessor;
-import com.totvs.mdmlang.processor.MDMProcessorContext;
+import org.brunocvcunha.mdmlang.processor.MDMAbstractProcessor;
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
 
 /**
  * Processor for 'substringOperation'. It is intended to get a defined part of a String

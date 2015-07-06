@@ -1,4 +1,4 @@
-package com.totvs.mdmlang.parsing;
+package org.brunocvcunha.mdmlang.parsing;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,9 +7,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
 import org.junit.Test;
-
-import com.totvs.mdmlang.processor.MDMProcessorContext;
 
 /**
  * Test that parses remove chars characters

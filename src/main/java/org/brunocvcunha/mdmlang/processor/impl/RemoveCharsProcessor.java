@@ -1,12 +1,11 @@
-package com.totvs.mdmlang.processor.impl;
+package org.brunocvcunha.mdmlang.processor.impl;
 
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
-import com.totvs.mdmlang.processor.MDMAbstractProcessor;
-import com.totvs.mdmlang.processor.MDMProcessorContext;
-import com.totvs.mdmlang.processor.constants.ProcessingSide;
+import org.brunocvcunha.mdmlang.processor.MDMAbstractProcessor;
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
+import org.brunocvcunha.mdmlang.processor.constants.ProcessingSide;
 
 /**
  * Processor for 'removeCharsOperation'. It removes chars from left or right according to specified

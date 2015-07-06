@@ -1,4 +1,4 @@
-package com.totvs.mdmlang;
+package org.brunocvcunha.mdmlang;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,11 +6,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.brunocvcunha.mdmlang.processor.MDMAbstractProcessor;
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
+import org.brunocvcunha.mdmlang.processor.impl.SubstringProcessor;
 import org.junit.Test;
-
-import com.totvs.mdmlang.processor.MDMAbstractProcessor;
-import com.totvs.mdmlang.processor.MDMProcessorContext;
-import com.totvs.mdmlang.processor.impl.SubstringProcessor;
 
 
 public class SubstringProcessorTest {

@@ -1,4 +1,4 @@
-package com.totvs.mdmlang.parsing;
+package org.brunocvcunha.mdmlang.parsing;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,36 +7,32 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.brunocvcunha.mdmlang.processor.MDMProcessorContext;
 import org.junit.Test;
 
-import com.totvs.mdmlang.processor.MDMProcessorContext;
-
 /**
- * Test that parses remove chars characters
+ * Test that parses trim commands
  * 
  * @author Bruno Candido Volpato da Cunha
  *
  */
-public class RemoveCharsProcessorParserTest {
+public class TrimProcessorParserTest {
 
   @Test
   public void trimParse() throws IOException {
     String testMapping =
-        "itemCode:\n" + 
-            "	remove 3 chars from right of it-codigo\n" +
-            "	remove 4 left chars from it-codigo\n" + 
-            "	trim it-codigo\n" + 
-            "	return it-codigo\n";
+        "itemCode:\n" + "	trim it-codigo, it-codigo\n" + "	return it-codigo, desc-item\n";
 
     MDMProcessorContext ctx =
         MDMProcessorContext.buildContext(new ByteArrayInputStream(testMapping.getBytes()));
 
     Map<String, Object> values = new HashMap<>();
-    values.put("it-codigo", "Item Code 123");
+    values.put("it-codigo", " Item Code 123");
+    values.put("desc-item", "A");
 
     Map<String, Object> golden = ctx.process(values);
 
-    assertEquals("Code", golden.get("itemCode"));
+    assertEquals("Item Code 123A", golden.get("itemCode"));
 
   }
 }
