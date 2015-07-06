@@ -11,13 +11,13 @@ Available Operations
 --------
 There is some operations that you are able to use (some variations allowed, please check the [grammar file](https://github.com/brunocvcunha/mdmlang/blob/master/src/main/antlr4/org/brunocvcunha/mdmlang/antlr/MDMRule.g4)):
 
-- keep only numbers of (field)
-- trim (field)
-- remove leading zeros from (field)
-- remove 3 chars from left of (field)
-- substring 2 to 3 of (field)
-- truncate at 20 (field)
-- return (field)
+- keep only numbers of `field`
+- trim `field`
+- remove leading zeros from `field`
+- remove 3 chars from left of `field`
+- substring 2 to 3 of `field`
+- truncate at 20 `field`
+- return `field`
 
 
 Usage Example
