@@ -9,7 +9,7 @@ The grammar for this DSL is based on [Antlr4](http://www.antlr.org/).
 
 Available Operations
 --------
-There is some operations that you are able to use (some variations allowed, please check 'MDMRule.g4' grammar file):
+There is some operations that you are able to use (some variations allowed, please check the [grammar file](https://github.com/brunocvcunha/mdmlang/blob/master/src/main/antlr4/org/brunocvcunha/mdmlang/antlr/MDMRule.g4)):
 
 - keep only numbers of (field)
 - trim (field)
