@@ -30,7 +30,8 @@ source-data.json
     "desc-item": " large description that contains more than 20 chars ",
     "num-ddd": 47,
     "num-telefone": "number 9000-1000"
-}```
+}
+```
 
 mdmlang-rules.txt
 ```text
@@ -76,7 +77,8 @@ public class MDMLanguageMain {
 
         System.out.println(gson.toJson(golden));
     }
-}```
+}
+```
 
 
 Outputs Transformed Data:
