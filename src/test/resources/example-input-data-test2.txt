@@ -1,0 +1,14 @@
+itemCode:
+    keep only numbers of it-codigo
+    trim it-codigo
+    return it-codigo
+
+description:
+    truncate at 200 desc-item
+    keep only numbers of desc-item
+    return desc-item
+    
+phoneNumber:
+    trim num-telefone, num-ddd
+    substring 0 to 2 of num-telefone
+    return num-telefone

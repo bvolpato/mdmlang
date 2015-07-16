@@ -62,5 +62,31 @@ public class ExampleInputTest {
     assertEquals("4792326009", golden.get("phoneNumber"));
 
   }
+  
+  @Test
+  public void trimParseSimple2() throws IOException {
+
+    Gson gson = new Gson();
+
+    InputStream rules = getClass().getResourceAsStream("/example-input-data-test2.txt");
+    InputStream json = getClass().getResourceAsStream("/example-input-data.json");
+    assertNotNull(rules);
+    assertNotNull(json);
+
+    MDMProcessorContext ctx = MDMProcessorContext.buildContext(rules);
+    Type type = new TypeToken<Map<String, Object>>() {}.getType();
+
+    Map<String, Object> values = gson.fromJson(new InputStreamReader(json), type);
+    System.out.println(values);
+
+    Map<String, Object> golden = ctx.process(values);
+
+    System.out.println(gson.toJson(golden));
+    assertEquals("", golden.get("itemCode"));
+    assertEquals("20", golden.get("description"));
+    assertEquals("92", golden.get("phoneNumber"));
+
+  }
+
 
 }
