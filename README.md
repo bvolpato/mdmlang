@@ -3,6 +3,8 @@ mdmlang
 
 [![Apache License](http://img.shields.io/badge/license-ASL-blue.svg)](https://github.com/brunocvcunha/mdmlang/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/brunocvcunha/mdmlang.svg)](https://travis-ci.org/brunocvcunha/mdmlang)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.brunocvcunha.mdmlang/mdmlang/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.brunocvcunha.mdmlang/mdmlang)
+[![Coverage Status](https://coveralls.io/repos/github/brunocvcunha/mdmlang/badge.svg?branch=master)](https://coveralls.io/github/brunocvcunha/mdmlang?branch=master)
 
 Data transformation language that makes the process of mapping data easier and with a natural syntax.
 The grammar for this DSL is based on [Antlr4](http://www.antlr.org/).
@@ -43,7 +45,7 @@ description:
     trim desc-item
     truncate at 20 desc-item
     return desc-item
-    
+
 phoneNumber:
     trim num-telefone
     keep only numbers of num-telefone
@@ -92,7 +94,7 @@ Outputs Transformed Data:
 
 
 
-Download 
+Download
 --------
 (Release still on process)
 
